@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F2B53A;
+  --color-secondary: #8E6F25;
+  --color-tertiary: #F2F2EF;
+  --color-neutral: #0D0D0D;
+  --color-surface: #141413;
+  --color-accent: #F2B53A;
+  --color-background: #0D0D0D;
+  --color-text: #F2F2EF;
+  --color-on-primary: #0D0D0D;
+
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-serif: "IBM Plex Mono", monospace;
+}
+
+@layer base {
+  :root {
+    --clr-primary: #F2B53A;
+    --clr-secondary: #8E6F25;
+    --clr-tertiary: #F2F2EF;
+    --clr-neutral: #0D0D0D;
+    --clr-surface: #141413;
+    --clr-on-primary: #0D0D0D;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #0D0D0D;
+    color: #F2B53A;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(20, 20, 19, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(142, 111, 37, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glow-hover {
+    transition: all 300ms;
+  }
+  .glow-hover:hover {
+    box-shadow: 0 0 15px rgba(242, 181, 58, 0.5);
+    border-color: rgba(242, 181, 58, 0.5);
+  }
+
+  .cinematic-shadow {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--clr-neutral);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--clr-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary);
+}
