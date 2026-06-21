@@ -2,7 +2,7 @@
 
 A premium travel booking platform showcasing immersive destinations across Karnataka and India, built with a modern dark cosmic aesthetic and interactive 3D elements.
 
-**🔗 Live Demo:** _[Add your Netlify link here after deployment]_
+**🔗 Live Demo:**  https://gandhadagudi.netlify.app/
 
 ---
 
@@ -58,7 +58,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:5173] in your browser.
 
 ### Build for Production
 
